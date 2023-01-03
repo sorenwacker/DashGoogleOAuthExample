@@ -2,9 +2,10 @@ import os
 import dash
 from dash import html
 from dash.dependencies import Input, Output
+#from dash_google_oauth.google_auth import GoogleAuth
 
-import google.auth
-import googleapiclient.discovery
+#import google.auth
+#import googleapiclient.discovery
 
 from dotenv import load_dotenv
 
@@ -16,8 +17,7 @@ app = dash.Dash(
     external_stylesheets=["https://codepen.io/chriddyp/pen/bWLwgP.css"],
 )
 
-from dash_google_oauth.google_auth import GoogleAuth
-auth = GoogleAuth(app)
+#auth = GoogleAuth(app)
 
 # Define the app layout
 app.layout = html.Div([
